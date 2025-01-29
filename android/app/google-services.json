@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "658114191084",
+    "project_id": "my-contect-66778",
+    "storage_bucket": "my-contect-66778.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658114191084:android:76efa9c2eb6ec08c830fc9",
+        "android_client_info": {
+          "package_name": "com.example.my_contats_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiK7YtDD7nmvBKOyjrAuXVJ4tlO9rc--8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
