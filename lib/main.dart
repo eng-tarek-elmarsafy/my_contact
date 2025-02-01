@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_contats_app/screens/home_screen.dart';
+import 'crud/create_profile.dart';
 import 'shared/themes/colors.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -28,7 +28,7 @@ class MyConctedApp extends StatelessWidget {
         scaffoldBackgroundColor: navy,
       ),
       debugShowCheckedModeBanner: false,
-      home: const HomeScreen(),
+      home: const CreateProfile(),
     );
   }
 }
