@@ -9,7 +9,7 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: const ProfileScreenBody(),
+      body: const ProfileFutureBuilder(),
       bottomNavigationBar: const CustomNavigationBar(),
     );
   }

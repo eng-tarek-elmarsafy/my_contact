@@ -1,9 +1,11 @@
+import 'package:my_contats_app/models/infosocial_model.dart';
+
 class UserModel {
   final String name;
   final String id;
   final String image;
   final String phoneNumber;
-  final Map socialMediaPlatforms;
+  final InfoSocialModel socialMediaPlatforms;
 
   UserModel(
       {required this.name,
@@ -18,8 +20,17 @@ class UserModel {
       'id': id,
       'image': image,
       'phoneNumber': phoneNumber,
-      'socialMediaPlatforms': socialMediaPlatforms,
+      'socialMediaPlatforms': socialMediaPlatforms.toMap(),
     };
-    
+  }
+
+  static UserModel fromMap(Map<String, dynamic> data) {
+    return UserModel(
+        name: data['name'] ?? '',
+        id: data['id'] ?? '',
+        image: data['image'] ?? '',
+        phoneNumber: data['phoneNumber'] ?? '',
+        socialMediaPlatforms:
+            InfoSocialModel.fromMap(data['socialMediaPlatforms'] ?? {}));
   }
 }

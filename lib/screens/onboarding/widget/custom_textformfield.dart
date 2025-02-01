@@ -4,6 +4,7 @@ class CustomTextFormField extends StatelessWidget {
   final int? maxLines;
   final bool? obscureText;
   final String hintText;
+  final TextEditingController? controller;
   final void Function(String?)? onSaved;
   final void Function(String?)? onChanged;
   const CustomTextFormField(
@@ -12,11 +13,13 @@ class CustomTextFormField extends StatelessWidget {
       required this.hintText,
       this.onSaved,
       this.onChanged,
-      this.obscureText});
+      this.obscureText,
+      this.controller});
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
       obscureText: obscureText ?? false,
       onChanged: onChanged,
       onSaved: onSaved,

@@ -1,24 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:my_contats_app/models/user_model.dart';
 
 class UserInfoRow extends StatelessWidget {
+  final UserModel? data;
   const UserInfoRow({
     super.key,
+    this.data,
   });
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
         CircleAvatar(
           radius: 90,
-          backgroundColor: Colors.amber,
+          backgroundImage: NetworkImage(data!.image),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         Text(
-          'User',
-          style: TextStyle(fontSize: 30),
+          data!.name,
+          style: const TextStyle(fontSize: 30),
         ),
       ],
     );

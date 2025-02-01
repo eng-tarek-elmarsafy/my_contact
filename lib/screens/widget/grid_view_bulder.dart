@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_contats_app/models/infosocial_model.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
-import 'social_media_icon.dart';
+import '../../models/social_media_icon.dart';
 
 class GridViewBulder extends StatefulWidget {
   const GridViewBulder({
